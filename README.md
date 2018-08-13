@@ -15,11 +15,11 @@ Three heavyweight VMs running their individual OS on top of a hypervisor (e.g. V
   <table border="0">
     <tr align="center">
       <td>
-          <img src="https://github.com/thiago-a-souza/Docker/blob/master/img/vm.png" height="35%" width="35%"> <br>
+          <img src="https://github.com/thiago-a-souza/Docker/blob/master/figs/vm.png" height="35%" width="35%"> <br>
           (a)
       </td>
       <td>
-        <img src="https://github.com/thiago-a-souza/Docker/blob/master/img/container.png"  height="40%" width="40%"><br>
+        <img src="https://github.com/thiago-a-souza/Docker/blob/master/figs/container.png"  height="40%" width="40%"><br>
 	  (b)
       </tr>
   </table>
@@ -37,7 +37,7 @@ Docker provides three fundamental components:
 A Docker image contains read-only layers representing file system differences. Layers are stacked on top of each other and have a reference to their parent images - the exception are base images, which have no parent images. Changes can be added only to the top most writable layer, and then can be committed to create a new image. A Docker image composed of layers on top of a base image is illustrated in Figure 2.
 
 <p align="center">
-<img src="https://github.com/thiago-a-souza/Docker/blob/master/img/docker_image.png"  height="40%" width="40%"> <br>
+<img src="https://github.com/thiago-a-souza/Docker/blob/master/figs/docker_image.png"  height="40%" width="40%"> <br>
 Figure 2: A Docker image <a href="https://github.com/thiago-a-souza/Docker/blob/master/README.md#references">(2)</a> </p> 
 </p>
 
