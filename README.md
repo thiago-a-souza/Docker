@@ -11,15 +11,18 @@ Today’s applications are based on several loosely coupled components, communic
 Three heavyweight VMs running their individual OS on top of a hypervisor (e.g. VMWare, VirtualBox, etc) which runs on top of the  host OS is illustrated in Figure 1(a). Containers, on the other hand, run on top of a Container Engine and each individual container requires only libraries and dependencies needed for their applications. This factor makes containers extremely lightweight and allows running dozens of containers at the same time on the same host [(1)](#references).
 
 
-<div>
-  <table border="0">
+
+
+
+<div align="center">
+  <table border="0" align="center">
     <tr align="center">
       <td>
-          <img src="https://github.com/thiago-a-souza/Docker/blob/master/figs/vm.png" height="35%" width="35%"> <br>
+          <img alt="VM" src="https://user-images.githubusercontent.com/17576728/126637604-576fe9df-9856-4287-9f25-9e13a1a6e00f.png" height="300"> <br>
           (a)
       </td>
       <td>
-        <img src="https://github.com/thiago-a-souza/Docker/blob/master/figs/container.png"  height="40%" width="40%"><br>
+        <img alt="Container" src="https://user-images.githubusercontent.com/17576728/126637653-7d456f59-afed-4d0e-a1b1-6a180311d251.png"  height="300"><br>
 	  (b)
       </tr>
   </table>
@@ -37,7 +40,7 @@ Docker provides three fundamental components:
 A Docker image contains read-only layers representing file system differences. Layers are stacked on top of each other and have a reference to their parent images - the exception are base images, which have no parent images. Changes can be added only to the top most writable layer, and then can be committed to create a new image. A Docker image composed of layers on top of a base image is illustrated in Figure 2.
 
 <p align="center">
-<img src="https://github.com/thiago-a-souza/Docker/blob/master/figs/docker_image.png"  height="40%" width="40%"> <br>
+<img alt="Docker Image" src="https://user-images.githubusercontent.com/17576728/126637640-e6e709e3-0306-410f-9cbe-f2d7a3154f33.png"  height="220"> <br>
 Figure 2: A Docker image <a href="https://github.com/thiago-a-souza/Docker/blob/master/README.md#references">(2)</a> </p> 
 </p>
 
