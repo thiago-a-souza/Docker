@@ -1,0 +1,13 @@
+# Builds a custom python image and push to the registry.
+# Running build from command line:
+#  gcloud builds submit . 
+
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/${PROJECT_ID}/my-python:${_TAG}', '.']
+substitutions:
+    _TAG: '1.0'
+images: ['gcr.io/${PROJECT_ID}/my-python:${_TAG}']
+logsBucket: 'gs://${PROJECT_ID}_cloudbuild/logs'
+timeout: 600s
+
